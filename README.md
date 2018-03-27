@@ -14,7 +14,7 @@ Pour vérifier si l'installation a marché, rendez-vous sur cette adresse localh
 
 Étape 2 Création de backups:
 
-(Pour cette étape, l'utilisateur que vous utiliserez devra avoir le droit de SELECT, DROP, CREATE sur votre base)
+(Pour cette étape, l'utilisateur que vous utiliserez devra avoir le droit de SELECT, DROP, CREATE, ALTER sur votre base)
 
 Avant de lancer le script, il vous faudra aller modifier le fichier dbnames.txt situé dans le dossier backup. Il vous faut écrire le nom de votre ou vos bases de données dont vous voulez une backup. (Sensible à la casse)
 /!\ Si dbnames.txt est vide, un dossier de backup sera créé, mais il sera vide.
