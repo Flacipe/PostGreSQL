@@ -33,4 +33,4 @@ Pour effectuer la restauration, il vous faudra lancer le script restoreDatabase.
 
 sudo python restoreDatabase.py
 
-Il vous faudra entrer le nom du dossier contenant vos bases de données, toujours entre simple quotes.
+Répondez aux informations demandées, toujours entre simple quote.
