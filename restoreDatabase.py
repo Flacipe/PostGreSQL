@@ -1,13 +1,14 @@
 import os
 
 
-DB_HOST='localhost'
-DB_USER = 'appll_web'
-DB_USER_PASSWORD = 'erty'
-DB_NAME = ''
+DB_HOST=input('ip address : ')
+DB_USER = input('Login : ')
+DB_USER_PASSWORD = input('Password : ')
 BACKUP_PATH = 'backup/dbbackup/'
 
-DB_NAME = input("Enter backup'name in format 'DDMMYYYY-HHMMSS' which is the backup's timecode :")
+DB_FOLDER = input("Enter the name of the backup directory : ")
+DB_NAME = input('Enter the database name : ')
 
-restorecmd = "mysql -u"+DB_USER+"-p" + DB_USER_PASSWORD + "postgre < " + DB_NAME + ".sql"
+restorecmd = "mysql -u"+DB_USER+" -p" + DB_USER_PASSWORD +" "+ DB_NAME + " < " + BACKUP_PATH + DB_FOLDER +"/"+ DB_NAME+".sql"
+os.system(restorecmd)
 print ("Backup restored")
